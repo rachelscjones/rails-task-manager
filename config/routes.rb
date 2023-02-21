@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   get "tasks/:id", to: "tasks#show", as: :task
   # CREATE TASK
   post "tasks", to: "tasks#create"
+  # GET TASK TO EDIT
+  get "tasks/:id/edit", to: "tasks#edit"
+  # UPDATE TASK
+  patch "tasks/:id", to: "tasks#update"
 end
